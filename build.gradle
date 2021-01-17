@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.testng:testng:7.1.0'
+
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-params:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
@@ -22,8 +22,7 @@ test {
 }
 
 
-test {
-    useTestNG()
+
 
     dependencies {
         testImplementation 'junit:junit:4.13'
@@ -33,4 +32,3 @@ test {
         useJUnit()
     }
 
-}
